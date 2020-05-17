@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crypto Live Tracker">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Crypto Tracker</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bitcoinstyle.css" rel="stylesheet">
+    
+
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/crpt@2x.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: black;">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cryptocurrency_Logo.svg"
+                    alt="alternative"></a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#video">VIDEO</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">FEATURED UPDATES</a>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="log-in.html">LOG IN</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header" style="background-color: black;">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h1>Crypto Tracker</h1>
+                            <p class="p-large">Use Crypto Tracker to know the live prices of each Cryptocurruncy</p>
+                            <a class="btn-solid-lg page-scroll" href="sign-up.html">SIGN UP</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="images/main-logo.png" alt="">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1920 310">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: black;
+                }
+            </style>
+        </defs>
+        <title>header-frame</title>
+        <path class="cls-1"
+            d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z" />
+    </svg>
+    <!-- end of header -->
+
+
+
+    <!-- Description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">DESCRIPTION</div>
+                    <h2 class="h2-heading">About This Site</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/description-1.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Learn About Crypto</h4>
+                            <p>A cryptocurrency is a new form of digital asset based on a network that is distributed
+                                across a large number of computers. </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/description-2.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Track Live Crypto</h4>
+                            <p>Track real-time BTC and ETH price and get live feed on current updates about
+                                cryptocurrencies. </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/description-3.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Analyse Crypto Value Chart</h4>
+                            <p>Analyse the market cap, price difference, total volume and circulating supplie</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+
+
+
+    <!-- Details -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Blockchain</h2>
+                        <p>By design, a blockchain is resistant to modification of the data. It is "an open, distributed
+                            ledger that can record transactions between two parties efficiently and in a verifiable and
+                            permanent way"
+                        </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">A Blockchain is a type of diary or spreadsheet containing
+                                    information about transactions.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Transactions are entered in the order in which they occurred.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">The nodes check to make sure a transaction has not been changed
+                                    by inspecting the hash.</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg page-scroll" href="https://builtin.com/blockchain">Learn More</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/detai.png" alt="">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details -->
+
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">FEATURES</div>
+                    <h2 class="h2-heading">Get Live updates on Cryptocurrenies</h2>
+                    <!--<p class="p-heading">Take your business strategy to the next level and automatize your marketing
+                        tasks to save time for product development. Tivo can provide results in less than 2 weeks</p>
+                </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Tabs Links -->
+                        <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab"
+                                    aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Bitcoin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab"
+                                    aria-controls="tab-2" aria-selected="false"><i
+                                        class="fas fa-envelope-open-text"></i>Etherum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab"
+                                    aria-controls="tab-3" aria-selected="false"><i class="fas fa-chart-bar"></i>Track
+                                    and Analyse</a>
+                            </li>
+                        </ul>
+                        <!-- end of tabs links -->
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="argoTabsContent">
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="image-container">
+                                            <img class="img-fluid" src="https://cdn4.vectorstock.com/i/1000x1000/83/83/bitcoin-technology-vector-26088383.jpg" alt="alternative">
+                                        </div> <!-- end of image-container -->
+                                    </div> <!-- end of col -->
+                                    <div class="col-lg-6">
+                                        <div class="text-container">
+                                            <h3>Bitcoin</h3>
+                                            <p>Bitcoin is a cryptocurrency. It is a decentralized digital currency
+                                                without a central bank or single administrator that can be sent from
+                                                user to user on the peer-to-peer bitcoin network without the need for
+                                                intermediaries.
+                                            </p>
+                                            <ul class="list-unstyled li-space-lg">
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">an open-source software by an anonymous
+                                                        programmer</div>
+                                                </li>
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">Fast and Anonymous transanction
+                                                    </div>
+                                                </li>
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">Safer transanction without 3rd party
+                                                        interferences</div>
+                                                </li>
+                                            </ul>
+                                            <input class="btn-solid-reg popup-with-move-anim" type="button"
+                                                onclick="window.location.href='https://bitcoin.org/en/';"
+                                                value="Learn More" />
+                                        </div> <!-- end of text-container -->
+                                    </div> <!-- end of col -->
+                                </div> <!-- end of row -->
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="image-container">
+                                            <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png" alt="alternative">
+                                        </div> <!-- end of image-container -->
+                                    </div> <!-- end of col -->
+                                    <div class="col-lg-6">
+                                        <div class="text-container">
+                                            <h3>Etherum</h3>
+                                            <p>Ethereum is an open source, public, blockchain-based distributed
+                                                computing platform and operating system featuring smart contract
+                                                functionality. It supports a modified version of Nakamoto consensus via
+                                                transaction-based state transitions.</p>
+                                            <ul class="list-unstyled li-space-lg">
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">an open source, public, blockchain-based
+                                                        distributed computing platform</div>
+                                                </li>
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">Runs on a blockchain, enabling developers to
+                                                        build and run distributed applications.</div>
+                                                </li>
+                                                <li class="media">
+                                                    <i class="fas fa-square"></i>
+                                                    <div class="media-body">Run without any downtime, fraud, control or
+                                                        interference from a third party</div>
+                                                </li>
+                                            </ul>
+                                            <input class="btn-solid-reg popup-with-move-anim" type="button"
+                                                onclick="window.location.href='https://ethereum.org/';"
+                                                value="Learn More" />
+                                        </div> <!-- end of text-container -->
+                                    </div> <!-- end of col -->
+                                </div> <!-- end of row -->
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                                <div class="container-fluid">
+                                    <div class="row text-center mt-4 pl-3 pr-3">
+                                        <div class="col-sm">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="h3">Bitcoin(BTC)</div>
+                                                    <div class="h5">(Price in USD)</div>
+                                                    <div id="btc_val" class="h4 kpi-value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="h3">Litecoin(LTC)</div>
+                                                    <div class="h5">(Price in USD)</div>
+                                                    <div id="ltc_val" class="h4 kpi-value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="h3">Ethereum</div>
+                                                    <div class="h5">(Price in USD)</div>
+                                                    <div id="eth_val" class="h4 kpi-value"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2 style="text-align: center;">Click here to see real-time price variation chart
+                                    </h2>
+                                    <div style="text-align: center;">
+                                        <input class="btn-solid-reg popup-with-move-anim" type="button"
+                                            onclick="window.location.href='bitcoinchart.html';" value="CLICK" />
+                                    </div>
+
+
+
+                                </div>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+
+                        </div> <!-- end of tab content -->
+                        <!-- end of tabs content -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of tabs -->
+        <!-- end of features -->
+        <div class="row">
+            <div class="col-lg-12">
+
+
+
+
+
+
+
+
+                <!-- Video -->
+                <div id="video" class="basic-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <!-- Video Preview -->
+                                <div class="image-container">
+                                    <div class="video-wrapper">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=8NgVGnX4KOw"
+                                            data-effect="fadeIn">
+                                            <img class="img-fluid" src="images/video-image.png" alt="alternative">
+                                            <span class="video-play-button">
+                                                <span></span>
+                                            </span>
+                                        </a>
+                                    </div> <!-- end of video-wrapper -->
+                                </div> <!-- end of image-container -->
+                                <!-- end of video preview -->
+
+
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of container -->
+                </div> <!-- end of basic-2 -->
+                <!-- end of video -->
+
+
+                <!-- Pricing -->
+    <div id="pricing" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">TOP RESOURCES</div>
+                    <h2 class="h2-heading">To Know About Cryptocurrency</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card-->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Could Crytocurruncy Application Change The Future of Digital Payment
+                            </div>
+
+                            <div class="divider"></div>
+                            <div>
+                                Cryptocurrency is a digital medium of exchange that is used for financial transactions.
+                                Cryptocurrency drives blockchain technology to achieve transparency, immutability, and
+                                decentralization.
+                                Click below to read more : )....
+                            </div>
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg page-scroll"
+                                    href="https://readwrite.com/2020/04/22/could-cryptocurrency-applications-change-the-future-of-digital-payment/">CLICK
+                                    HERE</a>
+                            </div>
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card-->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">The crypto market grows by $13 billion as bitcoin breaks the $10,000
+                                threshold for the first time since February (BTC)</div>
+                            <div class="divider"></div>
+                            <div>
+                                The top three cryptocurrencies ranked by market value are bitcoin,worth $181.5
+                                billion;ethereum,worth $23.4 billion; and XRP,worth $9.5 billion.
+                                Click below to read more : )....
+                            </div>
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg page-scroll"
+                                    href="https://www.businessinsider.in/stock-market/news/the-crypto-market-grows-by-13-billion-as-bitcoin-breaks-the-10000-threshold-for-the-first-time-since-february/articleshow/75630414.cms">CLICK
+                                    HERE</a>
+                            </div>
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                    <!-- Card-->
+                    <div class="card">
+                        <!--<div class="label">
+                            <p class="best-value">Best Value</p>
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title">The first cryptocurrency using proof-of-passport</div>
+                            <div class="divider"></div>
+                            <div>
+                                Check out how a website helps in getting bit coins for you using proof-of-passport.UBIC is a CryptoUBI, which means that most of its coins are distributed directly to its users in the form of a universal dividend.if
+                                you are interested click below :)...
+                            </div>
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg page-scroll" href="https://ubic.app/">CLICK HERE</a>
+                            </div>
+                        </div>
+                    </div> <!-- end of card -->
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of pricing -->
+
+
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Current NEWS On Cryptocurrency</h2>
+                        <ul class="news-list"></ul>
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of details -->
+
+
+                <!-- <style>
+                    *,
+                    *::before,
+                    *::after {
+                        box-sizing: border-box;
+                    }
+
+
+                    .contact {
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        transition: .5s;
+                        background-image: url("bg.jpg");
+                        background-color: #fff;
+                    }
+
+                    .contact section {
+                        text-align: right;
+                        padding: 10px;
+                    }
+
+                    .contact section a {
+                        border: lightblue;
+                        text-decoration: none;
+                        outline: none;
+                        color: blue;
+                    }
+
+                    .contact:target {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    .contact-form {
+                        position: absolute;
+                        max-width: 500px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        flex-direction: column;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                        width: 90%;
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+
+                    .contact-form-input,
+                    .contact-form button {
+                        font-family: inherit;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 12px;
+                        padding: 24px;
+                        letter-spacing: 1px;
+                        border: none;
+                        width: 100%;
+                        outline: none;
+                    }
+
+                    .contact-form button {
+                        background-color: blue;
+                        padding: 20px;
+                        color: #fff;
+                    }
+
+                    .contact-form div:nth-child(1),
+                    .contact-form div:nth-child(2) {
+                        position: relative;
+                    }
+
+                    .contact-form div:nth-child(1)::after,
+                    .contact-form div:nth-child(2)::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: 1px;
+                        background-color: rgba(0, 0, 0, 0.15);
+                    }
+
+                    .contact-form textarea {
+                        overflow: auto;
+                        height: 100px;
+                        text-transform: none;
+                    }
+                </style>
+                <script>
+                    function submitEmailForm(form) {
+                        var obj = new XMLHttpRequest();
+                        obj.onreadystatechange = function () {
+                            if (obj.readyState == 4) {
+                                if (obj.status == 200) {
+                                    var res = JSON.parse(obj.responseText);
+                                    alert(res.message);
+                                } else {
+                                    alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+                                }
+                            }
+                        };
+                        obj.open("post", form.action, true);
+                        obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+                        obj.send(JSON.stringify({
+                            name: form.name.value,
+                            email: form.email.value,
+                            message: form.message.value
+                        }));
+                        return false;
+                    }
+                </script>
+
+                <div class="contact">
+                    <h1>Home Page</h1>
+
+
+                    <form action="/ajax/email" class="contact-form" method="POST"
+                        onsubmit="return submitEmailForm(this);">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" class="contact-form-input"
+                                required />
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="email" class="contact-form-input" required />
+                        </div>
+                        <div>
+                            <textarea name="message" class="contact-form-input"
+                                placeholder="Briefly explain how you would want us to help you" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">send</button>
+                        </div>
+                    </form>
+                </div> -->
+
+
+            </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <!-- <div class="row">
+        <div class="col-lg-12">
+            <div class="icon-container">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+            </div> end of col -->
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    </div> <!-- end of form -->
+
+    
+    <!-- Newsletter -->
+    <div class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="above-heading">NEWSLETTER</div>
+                        <h2>Stay Updated With The Latest News To Get More Qualified Leads</h2>
+
+                        <!-- Newsletter Form -->
+                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="nemail" required>
+                                <label class="label-control" for="nemail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to this site T&C written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">SUBSCRIBE</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                        <!-- end of newsletter form -->
+    <!-- end of newsletter -->
+
+
+    <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1920 79">
+        <defs>
+            <style>
+                .cls-2 {
+                    fill: black;
+                }
+            </style>
+        </defs>
+        <title>footer-frame</title>
+        <path class="cls-2"
+            d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+            transform="translate(0 -0.188)" />
+    </svg>
+    <div class="footer" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>About</h4>
+                        <p class="p-small">Site was made by passionate student programmers : Vignesh, Shamanth and Karthik ;)</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="white"
+                                        href="#your-link">crpto.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="white" href="terms-conditions.html">Terms &
+                                        Conditions</a>, <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">India</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white"
+                                        href="mailto:contact@tivo.com">contact@dummy.com</a> <i
+                                        class="fas fa-globe"></i><a class="white" href="#your-link">www.crypto.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small"> <a href="https://inovatik.com"></a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/bitcoinchart.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
